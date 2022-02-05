@@ -1,11 +1,11 @@
-import "./inicio.css";
-import monkey from "../Images/monkey.png";
-import fruit from "../Images/fruits.png";
-import download from "../Images/download.png";
-import play from "../Images/play.svg";
-import menu from "../Images/menu.svg";
+import "./head.css";
+import monkey from "../../Images/monkey.png";
+import fruit from "../../Images/fruits.png";
+import download from "../../Images/download.png";
+import play from "../../Images/play.svg";
+import menu from "../../Images/menu.svg";
 
-function Inicio() {
+function Head() {
   return (
     <div>
       <div className="background_Orange styleHeader">
@@ -70,4 +70,4 @@ function Inicio() {
   );
 }
 
-export default Inicio;
+export default Head;

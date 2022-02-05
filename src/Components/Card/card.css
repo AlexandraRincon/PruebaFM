@@ -1,0 +1,54 @@
+.cardBorder {
+  width: 339.44px;
+  height: 143px;
+  border: 1px solid #ffcd3e;
+  box-sizing: border-box;
+  backdrop-filter: blur(33px);
+  border-radius: 46px;
+  border-top-right-radius: 1.01em 1em;
+  background: rgba(255, 255, 255, 0.22);
+backdrop-filter: blur(33px);
+}
+
+.cardInfo {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+  margin-right: 20px;
+  margin-top: -24px;
+}
+
+.cardInfoName {
+  margin-right: 10px;
+}
+.cardMessage {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  margin-top: 15px;
+  margin-right: 40px;
+}
+.cardMessage p {
+  font-family: DM Sans;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 0.553548px;
+  color: #000000;
+  mix-blend-mode: normal;
+  opacity: 0.85;
+  margin: 0px;
+}
+
+.cardInfoWith{
+    display: flex;
+    align-items: center;
+    background-color: white;
+    padding: 10px;
+    
+}
