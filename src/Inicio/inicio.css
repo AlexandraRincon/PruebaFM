@@ -22,6 +22,7 @@
   padding-top: 31px;
   padding-left: 187px;
 }
+
 .headMonkey img {
   width: 49px;
   height: 49px;
@@ -125,7 +126,7 @@
   text-align: right;
   margin-top: 40px;
   width: 50%;
-  font-family: "DM Sans";
+  font-family: "DM Sans", sans-serif;
   font-weight: 400;
   font-size: 17px;
   line-height: 21px;
@@ -146,21 +147,147 @@
   position: absolute;
   right: 100px;
 }
-.mainImagen img{
-    width: 566.89px;
-    height: 613.01px;
+.mainImagen img {
+  width: 566.89px;
+  height: 613.01px;
+  position: absolute;
+  right: 191px;
+  top: 222px;
+}
+.actions {
+  display: flex;
+  justify-content: end;
+  width: 48%;
+  margin: 50px;
+}
+
+.actionDownload {
+  padding-right: 50px;
+}
+
+.actionMenu {
+  display: none;
+}
+
+@media (max-width: 1700px) {
+  .mainTitle {
+    font-size: 3.1rem;
+    margin-top: 130px;
+    line-height: 90px;
+  }
+
+  .mainSubtitle {
+    font-size: 15px;
+  }
+
+  .styleHeader {
+    height: 556px;
+  }
+
+  .mainCircle {
+    margin-top: 70px;
+    width: 699px;
+    height: 699px;
+    right: 80px;
+  }
+  .mainImagen img {
+    width: 522.89px;
+    height: 515.01px;
+    right: 131px;
+    top: 200px;
+  }
+}
+
+@media (max-width: 800px) {
+  .styleHeader {
+    height: 640px;
+  }
+
+  .headMenu {
+    display: none;
+  }
+
+  .mainDescription {
+    width: 100%;
+    align-items: center;
+  }
+
+  .mainTitle {
+    font-size: 1.7rem;
+    margin-top: 120px;
+    line-height: 60px;
+    text-align: center;
+    width: 90%;
+  }
+
+  .mainSubtitle {
+    width: 80%;
+    text-align: center;
+    font-size: 12px;
+  }
+
+  .actions {
+    width: 100%;
+    margin: 0;
+    margin-top: 140px;
+    justify-content: center;
+  }
+  .actionDownload {
+    padding: 0px;
+    width: 50%;
+  }
+  .actionDownload img {
+    width: 100%;
+  }
+
+  .actionPlay {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  .actionMenu {
+    display: block;
+  }
+
+  .mainCircle {
+    margin-top: 260px;
+    width: 600px;
+    height: 600px;
+    right: -110px;
+    overflow: hidden;
+  }
+  .mainImagen img {
+    width: 365.89px;
+    height: 342.01px;
+    right: 3px;
+    top: 425px;
+  }
+
+  .headCircle {
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    top: -55px;
+  }
+
+  .headMonkey {
+    width: 100%;
+  }
+
+  .headMonkey img {
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
     position: absolute;
-    right: 191px;
-    top: 222px;
-}
-.actions{
-    display: flex;
-    justify-content: end;
-    width: 48%;
-    margin: 50px;
-}
+  }
 
-
-.actionDownload{
-    padding-right: 50px;
+  html,
+  body {
+    overflow-x: hidden;
+  }
+  body {
+    position: relative;
+  }
 }

@@ -2,7 +2,8 @@ import "./inicio.css";
 import monkey from "../Images/monkey.png";
 import fruit from "../Images/fruits.png";
 import download from "../Images/download.png";
-import play from "../Images/play.png";
+import play from "../Images/play.svg";
+import menu from "../Images/menu.svg";
 
 function Inicio() {
   return (
@@ -56,9 +57,13 @@ function Inicio() {
           {" "}
           <img src={download} />{" "}
         </div>
-        <div className="actionsPlay">
+        <div className="actionPlay">
           {" "}
           <img src={play} />{" "}
+        </div>
+        <div className="actionMenu">
+          {" "}
+          <img src={menu} />{" "}
         </div>
       </div>
     </div>
