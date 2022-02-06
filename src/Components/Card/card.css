@@ -1,5 +1,6 @@
 .cardBorder {
-  width: 339.44px;
+  /* width: 339.44px; */
+  width: 100%;
   height: 143px;
   border: 1px solid #ffcd3e;
   box-sizing: border-box;
@@ -7,7 +8,7 @@
   border-radius: 46px;
   border-top-right-radius: 1.01em 1em;
   background: rgba(255, 255, 255, 0.22);
-backdrop-filter: blur(33px);
+  backdrop-filter: blur(33px);
 }
 
 .cardInfo {
@@ -17,27 +18,37 @@ backdrop-filter: blur(33px);
   font-family: "DM Sans";
   font-style: normal;
   font-weight: 500;
-  font-size: 12px;
+  font-size: 0.8rem;
   line-height: 16px;
+}
+
+.cardInfoT {
   margin-right: 20px;
   margin-top: -24px;
 }
 
+.cardInfoB {
+  margin-right: 30px;
+  margin-top: 3px;
+}
 .cardInfoName {
   margin-right: 10px;
 }
+
 .cardMessage {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
-  margin-top: 15px;
+  justify-content: center;
   margin-right: 40px;
+  height: 80%;
 }
+
 .cardMessage p {
   font-family: DM Sans;
   font-style: normal;
   font-weight: 500;
-  font-size: 16px;
+  font-size: 1rem;
   letter-spacing: 0.553548px;
   color: #000000;
   mix-blend-mode: normal;
@@ -45,10 +56,21 @@ backdrop-filter: blur(33px);
   margin: 0px;
 }
 
-.cardInfoWith{
-    display: flex;
-    align-items: center;
-    background-color: white;
-    padding: 10px;
-    
+.cardInfoWith {
+  display: flex;
+  align-items: center;
+  background-color: #ffffffbf;
+  padding: 10px;
 }
+
+.rotate180-title {
+  transform: matrix(-1, 0, 0, 1, 0, 0);
+  justify-content: flex-start;
+}
+
+.rotate180-message {
+  transform: matrix(-1, 0, 0, 1, 0, 0);
+  align-items: flex-start;
+}
+
+

@@ -1,3 +1,4 @@
+
 .content {
   height: 770px;
   background: url(../../Images/celphone.svg);
@@ -5,43 +6,69 @@
   background-position: center;
   background-size: contain;
 }
-.contentTopLeft {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding-top: 171px;
-  padding-left: 100px;
+
+.relativeCard {
+  width: 38%;
+  position: relative;
+  min-width: 297px;
+  max-width: 380px;
 }
 
+.contentTopLeft {
+  left: 35%;
+  top: 54%;
+}
 
-.contentTopRigh{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding-right: 110px;
+.contentTopRigh {
+  left: 14%;
+  top: 30%;
 }
 .contentBottomLeft {
-    display: flex;
-    justify-content: center;
-    align-items: flex-end;
-    padding-left: 75px;
-  }
-  
-  .contentBottomRight{
-      
-      display: flex;
-      justify-content: start;
-      align-items: flex-start;
-      padding-top: 60px;
-      padding-left: 400px;
-     
-  }
-.widthHeight50{
-    display: flex;
-    height: 50%;
-    width: 100%;
+  left: 38%;
+  top: 45%;
 }
-.width50{
-    width: 50%;
+
+.contentBottomRight {
+  left: 23%;
+  top: 20%;
+}
+.widthHeight50 {
+  display: flex;
+  height: 50%;
+  width: 100%;
+}
+.width50 {
+  width: 50%;
+}
+
+@media (max-width: 1700px) {
+  .contentTopLeft {
+   left: 24%;
+  }
+  .contentBottomRight {
+    left: 32%;
+    top: 16%;
+  }
+  .contentBottomLeft {
+    left: 24%;
     
+  }
+}
+
+@media (max-width: 800px) {
+.displayNone{
+  display: none;
+}
+
+.contentBottomRight {
+  left: 13%;
+  top: 50%;
+}
+.contentTopLeft {
+  left: 18%;
+  top:20%
+}
+.width50 {
+  width: 100%;
+}
 }
