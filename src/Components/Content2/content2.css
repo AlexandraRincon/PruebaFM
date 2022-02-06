@@ -1,0 +1,84 @@
+.content2 {
+  display: flex;
+  width: 100%;
+  height: 990px;
+  left: calc(50% - 1440px / 2 + 1440px);
+  top: calc(50% - 1024px / 2 + 1654.5px);
+  background: radial-gradient(
+    82.69% 87.25% at 100% -4.5%,
+    #ffcc1c 0%,
+    #ff9d0c 100%
+  );
+}
+
+.content2Img {
+  width: 65%;
+}
+
+.content2Content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 35%;
+}
+
+.content2Description {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  width: 60%;
+}
+.content2Title {
+  font-family: Pridi;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 50px;
+  line-height: 58px;
+  text-align: center;
+}
+.content2Parragraph {
+  display: flex;
+  align-items: flex-end;
+  text-align: right;
+  margin-top: 30px;
+  margin-bottom: 55px;
+}
+
+.content2Parragraph p {
+  font-family: DM Sans;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 21px;
+  letter-spacing: 0.48px;
+  color: #ffffff;
+  mix-blend-mode: normal;
+  opacity: 0.85;
+}
+
+.content2ImgCircle {
+  display: flex;
+  font-style: normal;
+  justify-content: center;
+  align-items: flex-end;
+  border-radius: 50%;
+  width: 607px;
+  height: 607px;
+  background: #ffffff;
+  mix-blend-mode: soft-light;
+  opacity: 0.19;
+  position: absolute;
+  left: 183px;
+  top: 1859px;
+}
+
+.content2ImgCelphone {
+  padding-left: 361.58px;
+  padding-top: 389.74px;
+}
+
+.content2ImgBell {
+  position: relative;
+  top: -75px;
+  left: 98px;
+}

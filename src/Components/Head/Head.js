@@ -3,7 +3,7 @@ import monkey from "../../Images/monkey.png";
 import fruit from "../../Images/fruits.png";
 import download from "../../Images/download.png";
 import play from "../../Images/play.svg";
-import menu from "../../Images/menu.svg";
+import main from "../../Images/menu.svg";
 
 function Head() {
   return (
@@ -12,19 +12,13 @@ function Head() {
         <div className="head">
           <div className="headMonkey">
             <div className="headCircle"></div>
-            <img src={monkey} />
+            <img src={monkey} alt="monkey" />
           </div>
           <div className="headMenu">
             <div className="headerItems">
-              <a href="" className="">
-                Item 1
-              </a>
-              <a href="" className="">
-                Item 2
-              </a>
-              <a href="" className="">
-                Item 3
-              </a>
+              <a href="#">Item 1</a>
+              <a href="#">Item 2</a>
+              <a href="#">Item 3</a>
             </div>
             <div className="headerLogin">
               <button className="headerLoginButtom"> Login</button>
@@ -48,22 +42,19 @@ function Head() {
 
           <div className="mainImagen">
             <div className="mainCircle"></div>
-            <img src={fruit} />
+            <img src={fruit} alt="fruit" />
           </div>
         </div>
       </div>
       <div className="actions">
         <div className="actionDownload">
-          {" "}
-          <img src={download} />{" "}
+          <img src={download} alt="download" />{" "}
         </div>
         <div className="actionPlay">
-          {" "}
-          <img src={play} />{" "}
+          <img src={play} alt="play" />
         </div>
         <div className="actionMenu">
-          {" "}
-          <img src={menu} />{" "}
+          <img src={main} alt="main" />
         </div>
       </div>
     </div>
