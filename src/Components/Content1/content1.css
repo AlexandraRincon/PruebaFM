@@ -1,5 +1,4 @@
-
-.content {
+.content1 {
   height: 770px;
   background: url(../../Images/celphone.svg);
   background-repeat: no-repeat;
@@ -32,18 +31,22 @@
   left: 23%;
   top: 20%;
 }
-.widthHeight50 {
+.widthHeight45 {
   display: flex;
-  height: 50%;
+  height: 45%;
   width: 100%;
 }
 .width50 {
   width: 50%;
 }
 
+.mainOrange {
+  display: none;
+}
+
 @media (max-width: 1700px) {
   .contentTopLeft {
-   left: 24%;
+    left: 24%;
   }
   .contentBottomRight {
     left: 32%;
@@ -51,24 +54,29 @@
   }
   .contentBottomLeft {
     left: 24%;
-    
   }
 }
 
 @media (max-width: 800px) {
-.displayNone{
-  display: none;
-}
+  .displayNone {
+    display: none;
+  }
 
-.contentBottomRight {
-  left: 13%;
-  top: 50%;
-}
-.contentTopLeft {
-  left: 18%;
-  top:20%
-}
-.width50 {
-  width: 100%;
-}
+  .contentBottomRight {
+    left: 13%;
+    top: 50%;
+  }
+  .contentTopLeft {
+    left: 18%;
+    top: 20%;
+  }
+  .width50 {
+    width: 100%;
+  }
+
+  .mainOrange {
+    display: flex;
+    justify-content: flex-end;
+    height: 10%;
+  }
 }

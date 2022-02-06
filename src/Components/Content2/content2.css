@@ -1,9 +1,8 @@
 .content2 {
   display: flex;
   width: 100%;
-  height: 990px;
-  left: calc(50% - 1440px / 2 + 1440px);
-  top: calc(50% - 1024px / 2 + 1654.5px);
+  min-height: 990px;
+
   background: radial-gradient(
     82.69% 87.25% at 100% -4.5%,
     #ffcc1c 0%,
@@ -13,6 +12,7 @@
 
 .content2Img {
   width: 65%;
+  height: 1250px;
 }
 
 .content2Content {
@@ -81,4 +81,114 @@
   position: relative;
   top: -75px;
   left: 98px;
+}
+
+.content2ImgSalad {
+  position: relative;
+  top: -291px;
+  right: 39px;
+}
+.content2ImgRecipes {
+  position: relative;
+  top: -745px;
+  right: 200px;
+}
+
+.content2ImgFood {
+  position: relative;
+  top: -388px;
+  right: 260px;
+}
+.content2ImgCalories {
+  position: relative;
+  top: -785px;
+  left: 216px;
+}
+.content2Below{
+  display: none;
+}
+
+@media (max-width: 1700px) {
+  .content2ImgCircle {
+    top: 1730px;
+  }
+  .content2ImgCelphone {
+    padding-top: 355.74px;
+  }
+}
+
+@media (max-width: 800px) {
+  .content2ImgFood {
+    display: none;
+  }
+
+  .content2Img {
+    width: 100%;
+    height: 830px;
+  }
+
+  .content2Content {
+    width: 100%;
+  }
+  .content2 {
+    flex-direction: column-reverse;
+  }
+
+  .content2Description {
+    margin-top: 120px;
+    width: 100%;
+    align-items: center;
+  }
+  .content2Title {
+    font-size: 40px;
+  }
+
+  .content2Parragraph {
+    width: 85%;
+    text-align: center;
+    font-size: 14px;
+  }
+  .content2Parragraph p {
+    font-size: 14.5px;
+  }
+  .content2Download {
+    display: none;
+  }
+
+  .content2ImgCircle {
+    position: absolute;
+    width: 497px;
+    height: 497px;
+    left: -40px;
+    top: 1935px;
+  }
+
+  .content2ImgCelphone {
+    padding: 100px;
+  }
+  .content2ImgCalories {
+    top: -300px;
+    left: 18px;
+    transform: scale(0.8);
+  }
+
+  .content2ImgRecipes{
+    top: -777px;
+    right: 108px;
+    transform: scale(0.8);
+  }
+  .content2Below{
+    display: block;
+    width: 85%;
+    margin: 0 auto;
+    padding-top: 40px;
+    border-top: 0.5px solid #FFFFFF;;
+  }
+  .content2Download2{
+    text-align: center;
+    transform: scale(0.8);
+  }
+  .content2MainOrange{
+    text-align: end;
+  }
 }
