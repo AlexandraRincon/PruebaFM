@@ -1,6 +1,9 @@
 import "./footer.css";
 import foonkieMonkey from "../../Images/foonkieMonkeyLogo.svg";
-import arrow from "../../Images/arrow.svg"
+import arrow from "../../Images/arrow.svg";
+import linkedin from "../../Images/linkedin.svg";
+import facebook from "../../Images/facebook.svg";
+import twitter from "../../Images/twitter.svg";
 
 function Footer() {
   return (
@@ -29,18 +32,40 @@ function Footer() {
         <div className="dataSubscribe">
           <p>Subscribe</p>
           <div className="inputSubscribe">
-            <input  type="text" placeholder="Get product updates" />
+            <input type="text" placeholder="Get product updates" />
             <div className="arrow">
-                <img src={arrow} alt="" />
+              <img src={arrow} alt="arrow" />
             </div>
+          </div>
+
+          <div className="quickLinks">
+            <select className="footerSelect" name="footerSelect">
+              <option value="0">Quick Links</option>
+              <option value="1">Product</option>
+              <option value="2"> Company 2</option>
+              <option value="3">Information</option>
+              <option value="4">foonkie monkey</option>
+            </select>
           </div>
         </div>
       </div>
 
       <div className="footerSocial">
-        <div className="socialLogo">1111111</div>
-        <div className="socialPowered">2222222222</div>
-        <div className="socialReserves">33333333</div>
+        <div className="footerContent">
+          <div className="socialLogo">
+            <img src={linkedin} alt="linkedin" />
+            <img src={facebook} alt="facebook" />
+            <img src={twitter} alt="twitter" />
+          </div>
+          <div className="socialPowered fontEpilogue500">
+            <p>Powered by</p>
+            <img src={foonkieMonkey} alt="logoMonkey" />
+          </div>
+        </div>
+
+        <div className="socialReserves fontEpilogue500">
+          <p>© 2021 FM. All rights reserved</p>
+        </div>
       </div>
     </div>
   );
