@@ -1,5 +1,7 @@
 import "./card.css";
 import people from "../../Images/people.svg";
+
+
 function Card({ titlePosition, rotation }) {
   return (
     <div className="card">

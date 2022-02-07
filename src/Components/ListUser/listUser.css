@@ -1,0 +1,28 @@
+.tableUser {
+  width: 80%;
+}
+
+.tableAvatar img {
+  height: 100px;
+}
+
+.tableUserAvatar{
+    text-align: center;
+}
+.tableTitle{
+    font-family: "DM Sans";
+    margin: 25px;
+}
+
+.tableAvatar td {
+    border-top: 1px solid black;
+}
+.tableUserTitle{
+    height: 40px;
+}
+
+.tableListUser{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

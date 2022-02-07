@@ -1,5 +1,6 @@
 import Inicio from "./Inicio.js"
-import Card from "./Components/Card/Card"
+// import PersonalCard from "./Components/PersonalCard/PersonalCard"
+import ListUser from "./Components/ListUser/ListUser"
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 function App() {
@@ -7,7 +8,8 @@ function App() {
     <Router>
       <Routes>
         <Route path="/" element={<Inicio />} />
-        {/* <Route path="/card" element={<Card />} /> */}
+        <Route path="/ListUser" element={<ListUser />} />
+        {/* <Route path="/PersonalCard" element={<PersonalCard />} />  */}
       </Routes>
     </Router>
   );

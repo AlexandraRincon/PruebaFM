@@ -5,6 +5,8 @@ import download from "../../Images/download.png";
 import play from "../../Images/play.svg";
 import main from "../../Images/menu.svg";
 
+
+
 function Head() {
   return (
     <div>
@@ -47,9 +49,9 @@ function Head() {
         </div>
       </div>
       <div className="actions">
-        <div className="actionDownload">
-          <img src={download} alt="download" />{" "}
-        </div>
+        <a href="/ListUser" className="actionDownload">
+          <img  src={download} alt="download" />{" "}
+        </a>
         <div className="actionPlay">
           <img src={play} alt="play" />
         </div>
