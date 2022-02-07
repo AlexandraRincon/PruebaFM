@@ -1,18 +1,17 @@
 .content2 {
-  display: flex;
-  width: 100%;
-  min-height: 990px;
-
   background: radial-gradient(
     82.69% 87.25% at 100% -4.5%,
     #ffcc1c 0%,
     #ff9d0c 100%
   );
+  display: flex;
+  min-height: 990px;
+  width: 100%;
 }
 
 .content2Img {
-  width: 65%;
   height: 1250px;
+  width: 65%;
 }
 
 .content2Content {
@@ -22,26 +21,44 @@
   width: 35%;
 }
 
-.content2Description {
+.flex-AlignItems-End {
   display: flex;
-  flex-direction: column;
   align-items: flex-end;
+}
+
+.content2Description {
+  flex-direction: column;
   width: 60%;
 }
+.content2Parragraph {
+  text-align: right;
+  margin-top: 30px;
+  margin-bottom: 55px;
+}
+
+.fontStyleNormal {
+  font-style: normal;
+}
+
+.content2ImgCircle {
+  justify-content: center;
+  border-radius: 50%;
+  width: 607px;
+  height: 607px;
+  background: #ffffff;
+  mix-blend-mode: soft-light;
+  opacity: 0.19;
+  position: absolute;
+  left: 183px;
+  top: 1859px;
+}
+
 .content2Title {
   font-family: Pridi;
-  font-style: normal;
   font-weight: 600;
   font-size: 50px;
   line-height: 58px;
   text-align: center;
-}
-.content2Parragraph {
-  display: flex;
-  align-items: flex-end;
-  text-align: right;
-  margin-top: 30px;
-  margin-bottom: 55px;
 }
 
 .content2Parragraph p {
@@ -56,55 +73,41 @@
   opacity: 0.85;
 }
 
-.content2ImgCircle {
-  display: flex;
-  font-style: normal;
-  justify-content: center;
-  align-items: flex-end;
-  border-radius: 50%;
-  width: 607px;
-  height: 607px;
-  background: #ffffff;
-  mix-blend-mode: soft-light;
-  opacity: 0.19;
-  position: absolute;
-  left: 183px;
-  top: 1859px;
-}
-
 .content2ImgCelphone {
   padding-left: 361.58px;
   padding-top: 389.74px;
 }
 
-.content2ImgBell {
+.positionRelative {
   position: relative;
+}
+
+.content2ImgBell {
   top: -75px;
   left: 98px;
 }
 
 .content2ImgSalad {
-  position: relative;
   top: -291px;
   right: 39px;
 }
+
 .content2ImgRecipes {
-  position: relative;
   top: -745px;
   right: 200px;
 }
 
 .content2ImgFood {
-  position: relative;
   top: -388px;
   right: 260px;
 }
+
 .content2ImgCalories {
-  position: relative;
   top: -785px;
   left: 216px;
 }
-.content2Below{
+
+.content2Below {
   display: none;
 }
 
@@ -172,23 +175,23 @@
     transform: scale(0.8);
   }
 
-  .content2ImgRecipes{
+  .content2ImgRecipes {
     top: -777px;
     right: 108px;
     transform: scale(0.8);
   }
-  .content2Below{
+  .content2Below {
     display: block;
     width: 85%;
     margin: 0 auto;
     padding-top: 40px;
-    border-top: 0.5px solid #FFFFFF;;
+    border-top: 0.5px solid #ffffff;
   }
-  .content2Download2{
+  .content2Download2 {
     text-align: center;
     transform: scale(0.8);
   }
-  .content2MainOrange{
+  .content2MainOrange {
     text-align: end;
   }
 }

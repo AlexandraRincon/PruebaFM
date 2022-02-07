@@ -24,31 +24,31 @@ function Content2() {
 
       <div className="content2Img">
 
-        <div className="content2ImgCircle"></div>
+        <div className="content2ImgCircle flex-AlignItems-End fontStyleNormal"></div>
         <div className="content2ImgCelphone">
           <img src={celphone2} alt="celphone2" />
-          <div className="content2ImgBell">
+          <div className="content2ImgBell positionRelative">
             <img src={bell} alt="bell" />
           </div>
-          <div className="content2ImgSalad">
+          <div className="content2ImgSalad positionRelative">
             <img src={salad} alt="salad" />
           </div>
-          <div className="content2ImgRecipes">
+          <div className="content2ImgRecipes positionRelative">
             <img src={recipes} alt="recipes" />
           </div>
-          <div className="content2ImgFood">
+          <div className="content2ImgFood positionRelative">
             <img src={food} alt="food" />
           </div>
-          <div className="content2ImgCalories">
+          <div className="content2ImgCalories positionRelative">
             <img src={calories} alt="calories" />
           </div>
         </div>
         
       </div>
       <div className="content2Content">
-        <div className="content2Description">
-          <div className="content2Title"> Lorem ipsum.</div>
-          <div className="content2Parragraph">
+        <div className="content2Description flex-AlignItems-End">
+          <div className="content2Title fontStyleNormal"> Lorem ipsum.</div>
+          <div className="content2Parragraph flex-AlignItems-End">
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas
               vehicula rutrum arcu in dictum. Praesent risus turpis.

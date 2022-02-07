@@ -15,14 +15,14 @@ function Content1() {
             <Card titlePosition="top" rotation={false}></Card>
           </div>
         </div>
-        <div className=" displayNone width50 ">
+        <div className=" displayNoneMobile width50 ">
           <div className="contentTopRigh relativeCard" style={scale}>
             <Card titlePosition="top" rotation={true}></Card>
           </div>
         </div>
       </div>
       <div className="contentBottom widthHeight45">
-        <div className=" displayNone width50">
+        <div className=" displayNoneMobile width50">
           <div className="contentBottomLeft relativeCard" style={scale}>
             <Card titlePosition="bottom" rotation={false}></Card>
           </div>

@@ -28,8 +28,8 @@
 }
 
 .contentBottomRight {
-  left: 23%;
-  top: 20%;
+  left: 30%;
+  top: 28%;
 }
 .widthHeight45 {
   display: flex;
@@ -49,8 +49,8 @@
     left: 24%;
   }
   .contentBottomRight {
-    left: 32%;
-    top: 16%;
+    left: 39%;
+    top: 25%;
   }
   .contentBottomLeft {
     left: 24%;
@@ -58,7 +58,7 @@
 }
 
 @media (max-width: 800px) {
-  .displayNone {
+  .displayNoneMobile {
     display: none;
   }
 

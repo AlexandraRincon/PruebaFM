@@ -22,6 +22,15 @@
   line-height: 16px;
 }
 
+.cardMessage {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
+  margin-right: 40px;
+  height: 80%;
+}
+
 .cardInfoT {
   margin-right: 20px;
   margin-top: -24px;
@@ -33,15 +42,6 @@
 }
 .cardInfoName {
   margin-right: 10px;
-}
-
-.cardMessage {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-  justify-content: center;
-  margin-right: 40px;
-  height: 80%;
 }
 
 .cardMessage p {
@@ -63,6 +63,7 @@
   padding: 10px;
 }
 
+
 .rotate180-title {
   transform: matrix(-1, 0, 0, 1, 0, 0);
   justify-content: flex-start;
@@ -72,5 +73,3 @@
   transform: matrix(-1, 0, 0, 1, 0, 0);
   align-items: flex-start;
 }
-
-

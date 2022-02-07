@@ -7,17 +7,17 @@ import twitter from "../../Images/twitter.svg";
 
 function Footer() {
   return (
-    <div className="footer">
-      <div className="footerData">
-        <div className="dataPrincipal ">
+    <div className="footer flexDirec-Colum ">
+      <div className="footerData flexSpaceB">
+        <div className="dataPrincipal flexDirec-Colum ">
           <img src={foonkieMonkey} alt="LogoMonkey" />
           <p> +0 (0000) 000 00-00 </p>
           <p> support@sniff.com </p>
         </div>
 
-        <div className="dataLinks">
+        <div className="dataLinks flexDirec-Colum">
           <p> Quick Links </p>
-          <div className="dataLinksBase">
+          <div className="dataLinksBase flexDirec-Colum ">
             <div className="linksDataBase">
               <a>Product</a>
               <a>Company</a>
@@ -39,7 +39,7 @@ function Footer() {
           </div>
 
           <div className="quickLinks">
-            <select className="footerSelect" name="footerSelect">
+            <select className="footerSelect displayNone" name="footerSelect">
               <option value="0">Quick Links</option>
               <option value="1">Product</option>
               <option value="2"> Company 2</option>
@@ -50,8 +50,8 @@ function Footer() {
         </div>
       </div>
 
-      <div className="footerSocial">
-        <div className="footerContent">
+      <div className="footerSocial flexSpaceB">
+        <div className="footerContent flexSpaceB">
           <div className="socialLogo">
             <img src={linkedin} alt="linkedin" />
             <img src={facebook} alt="facebook" />
