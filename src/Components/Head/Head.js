@@ -1,5 +1,5 @@
 import "./head.css";
-import monkey from "../../Images/monkey.png";
+import Menu from "../Menu/Menu"
 import fruit from "../../Images/fruits.png";
 import download from "../../Images/download.png";
 import play from "../../Images/play.svg";
@@ -11,22 +11,7 @@ function Head() {
   return (
     <div>
       <div className="background_Orange styleHeader">
-        <div className="head">
-          <div className="headMonkey">
-            <div className="headCircle"></div>
-            <img src={monkey} alt="monkey" />
-          </div>
-          <div className="headMenu">
-            <div className="headerItems">
-              <a href="#">Item 1</a>
-              <a href="#">Item 2</a>
-              <a href="#">Item 3</a>
-            </div>
-            <div className="headerLogin">
-              <button className="headerLoginButtom"> Login</button>
-            </div>
-          </div>
-        </div>
+       <Menu></Menu>
 
         <div className="main">
           <div className="mainDescription">

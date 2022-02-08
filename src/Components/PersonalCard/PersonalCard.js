@@ -2,12 +2,12 @@ import "./personalCard.css";
 import emailImage from "../../Images/email.png";
 import close from "../../Images/close.png";
 
-function PersonalCard({ user }) {
+function PersonalCard({ user, closeCard}) {
   return (
     <div className="personalCardOrigin">
       <div className="headerCard">
         <div className="titleCard">
-          <img className="close" src={close} alt="" />
+          <img className="close" src={close} alt="" onClick={()=> closeCard()}/>
           <img src={user.avatar} className="personalCardImage" alt="" />
         </div>
       </div>

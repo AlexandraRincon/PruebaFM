@@ -1,5 +1,5 @@
 .tableUser {
-  width: 80%;
+  width: 75%;
 }
 
 .tableAvatar img {
@@ -26,3 +26,56 @@
     flex-direction: column;
     align-items: center;
 }
+
+.background_Orange {
+    background: radial-gradient(
+      82.69% 87.25% at 100% -4.5%,
+      #ffcc1c 0%,
+      #ff9d0c 100%
+    );
+  }
+
+  .h100{
+      height: 100px;
+  }
+
+  .listFooter{
+      width: 100%;
+      margin-top: 70px;
+      
+  }
+
+  .listFooter .footerData {
+    border-bottom: 0.914701px solid black;
+  }
+
+  .listFooter .inputSubscribe input  {
+      background: white;
+  }
+
+  .listFooter .dataPrincipal{
+    border-top: 1px solid black;
+  }
+
+  .listFooter .footerContent{
+    border-bottom: 0.914701px solid black;
+  }
+
+  .backgroundCard {
+    width: 100%;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    background-color: #000000c7;
+  }
+
+  @media (max-width: 800px) {
+    .tableUser{
+      font-size: 12px;
+      width: 90%;
+    }
+  }

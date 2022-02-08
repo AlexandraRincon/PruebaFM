@@ -186,6 +186,7 @@
     margin: 0 auto;
     padding-top: 40px;
     border-top: 0.5px solid #ffffff;
+    z-index: 5;
   }
   .content2Download2 {
     text-align: center;

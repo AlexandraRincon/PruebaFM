@@ -12,9 +12,9 @@ function Content2() {
     <div className="content2">
 
       <div className="content2Below">
-        <div className="content2Download2">
+        <a href="/ListUser" className="content2Download2">
           <img src={download2} alt="download2" />
-        </div>
+        </a>
         <div className="content2MainOrange">
         <img src={mainOrange} alt="mainOrange" />
       </div>
@@ -54,9 +54,9 @@ function Content2() {
               vehicula rutrum arcu in dictum. Praesent risus turpis.
             </p>
           </div>
-          <div className="content2Download">
+          <a href="/ListUser" className="content2Download">
             <img src={download2} alt="download2" />
-          </div>
+          </a>
         </div>
       </div>
       
