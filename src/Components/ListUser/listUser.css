@@ -53,11 +53,9 @@
       background: white;
   }
 
-  .listFooter .dataPrincipal{
-    border-top: 1px solid black;
-  }
 
-  .listFooter .footerContent{
+
+  .listFooter .footerSocial{
     border-bottom: 0.914701px solid black;
   }
 
@@ -77,5 +75,13 @@
     .tableUser{
       font-size: 12px;
       width: 90%;
+    }
+
+    .listFooter .footerContent{
+      border-bottom: 0.914701px solid black;
+    }
+
+    .listFooter .dataPrincipal{
+      border-top: 1px solid black;
     }
   }
