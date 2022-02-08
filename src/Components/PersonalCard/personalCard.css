@@ -1,0 +1,68 @@
+.personalCardOrigin {
+  font-family: "Noto Sans JP", sans-serif;
+  background-color: #fef8f8;
+  max-width: 500px;
+  width: 100%;
+  border: 0.914701px solid rgba(0, 0, 0, 0.16);
+  border-radius: 5px;
+  -webkit-box-shadow: 10px 10px 5px 0px rgba(176, 176, 176, 1);
+  -moz-box-shadow: 10px 10px 5px 0px rgba(176, 176, 176, 1);
+  box-shadow: 10px 10px 5px 0px rgba(176, 176, 176, 1);
+}
+
+.close {
+  width: 20px;
+  position: relative;
+  transform-origin: right;
+  left: 46%;
+  top: 10px;
+}
+
+.headerCard {
+  width: 100%;
+  height: 100px;
+}
+
+.headerCard .personalCardImage {
+  width: 100px;
+  border-radius: 50%;
+  position: relative;
+  top: 10px;
+}
+
+.infoCard h5 {
+  font-family: Pridi;
+  font-size: 20px;
+  text-align: center;
+  margin-bottom: 8px;
+}
+
+.titleCard {
+  background: radial-gradient(
+    82.69% 87.25% at 100% -4.5%,
+    #ffcc1c 0%,
+    #ff9d0c 100%
+  );
+  width: 100%;
+  height: 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.infoDescriptionCard {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 15px;
+  font-size: 13px;
+}
+
+.infoDescriptionCard div {
+  display: flex;
+  align-items: center;
+}
+
+.infoDescriptionCard img {
+  width: 15px;
+  margin-right: 5px;
+}

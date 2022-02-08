@@ -1,6 +1,7 @@
 import "./listUser.css";
 import axios from "axios";
 import React, { useEffect, useState } from "react";
+import Head from "../Head/Head"
 
 function ListUser() {
   const [infoUser, requestUser] = useState([]);
@@ -38,6 +39,9 @@ function ListUser() {
 
   return (
     <div>
+      <div>
+        <Head></Head>
+      </div>
       <div className="tableListUser">
         <div className="tableTitle">
           <h1>Lista de Usuarios</h1>
