@@ -8,17 +8,21 @@ import PersonalCard from "../PersonalCard/PersonalCard";
 function ListUser() {
   const [requestUser, setRequestUser] = useState([]);
   const [userSelected, setUserSelected] = useState(null);
+  const [totalPage, setTotalPege] = useState (1);
+  const [currentPage, setCurrentPage] = useState (1);
 
   useEffect(() => {
     getUser();
-  }, []);
+  }, [currentPage]);
 
+  
   const getUser = async () => {
     try {
       const response = await axios({
         method: "get",
-        url: "https://reqres.in/api/users?page=1",
+        url: "https://reqres.in/api/users?page=" +currentPage,
       });
+      setTotalPege(response.data.total_pages)
       setRequestUser(response.data.data);
 
       console.log(response.data);
@@ -27,6 +31,15 @@ function ListUser() {
     }
   };
 
+  const getPreviousPage = () =>{
+    setCurrentPage(currentPage-1);
+    console.log(currentPage);
+  }
+
+  const getNextPage= () => {
+    setCurrentPage(currentPage+1);
+    
+  }
   const generateTable = () => {
     return requestUser.map((element) => (
       <tr
@@ -75,6 +88,14 @@ function ListUser() {
           <tbody>{generateTable()}</tbody>
         </table>
       </div>
+
+      <div className="buttonNavegation">
+
+        <button disabled={currentPage===1} onClick={()=> getPreviousPage()}> Previous</button>
+
+        <button disabled={currentPage === totalPage} onClick={()=> getNextPage()}> Next</button>
+      </div>
+
       <div className="listFooter background_Orange">
         <Footer></Footer>
       </div>
