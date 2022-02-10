@@ -20,7 +20,7 @@ function ListUser() {
     try {
       const response = await axios({
         method: "get",
-        url: "https://reqres.in/api/users?page=" +currentPage,
+        url: "https://reqres.in/api/users?page=" + currentPage,
       });
       setTotalPege(response.data.total_pages)
       setRequestUser(response.data.data);
