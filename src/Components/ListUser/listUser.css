@@ -71,6 +71,17 @@
     background-color: #000000c7;
   }
 
+  .buttonNavegation{
+    display:flex;
+    justify-content: center;
+    align-items:  center;
+  }
+  .buttonNavegation button{
+    margin: 25px;
+    width: 80px;
+  }
+
+
   @media (max-width: 800px) {
     .tableUser{
       font-size: 12px;

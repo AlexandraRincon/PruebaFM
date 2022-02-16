@@ -4,8 +4,43 @@ import arrow from "../../Images/arrow.svg";
 import linkedin from "../../Images/linkedin.svg";
 import facebook from "../../Images/facebook.svg";
 import twitter from "../../Images/twitter.svg";
+import React, { useState } from "react";
 
 function Footer() {
+  
+  
+  const goToPage = (option) => {
+    console.log(typeof option)
+    let windowObjectReference; 
+    switch (option){
+      case '1': windowObjectReference = window.open(
+        "https://www.foonkiemonkey.co.uk/portfolio/");
+        break;
+
+      case '2': windowObjectReference = window.open(
+        "https://www.britannica.com/animal/monkey");
+        break; 
+
+      case '3': windowObjectReference = window.open(
+        "https://en.wikipedia.org/wiki/Information");
+        break;
+
+      case '4': windowObjectReference = window.open(
+        "https://www.foonkiemonkey.co.uk/");
+        break;
+
+      default: break;
+    }  
+        
+  }
+    
+  
+
+  const handleChange = (selectedOption) => {
+    const optionSelect = selectedOption.target.value;
+    goToPage(optionSelect);
+  };
+
   return (
     <div className="footer flexDirec-Colum ">
       <div className="footerData flexSpaceB">
@@ -39,7 +74,11 @@ function Footer() {
           </div>
 
           <div className="quickLinks">
-            <select className="footerSelect displayNone" name="footerSelect">
+            <select
+              onChange={handleChange}
+              className="footerSelect displayNone"
+              name="footerSelect"
+            >
               <option value="0">Quick Links</option>
               <option value="1">Product</option>
               <option value="2"> Company 2</option>
